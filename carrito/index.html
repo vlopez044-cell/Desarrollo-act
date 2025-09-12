@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Carrito de Compras</h1>
+
+    <div class="row">
+      <!-- Productos -->
+      <div class="col-md-8">
+        <div class="row g-3">
+          <!-- Card Producto 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1004&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250px" height="230px" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">N°5 Chanel</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Producto 1')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1458538977777-0549b2370168?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250px" height="230px" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Miss Dior</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Producto 2')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250px" height="230px" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Sun Di Gioia</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Producto 3')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1543422655-ac1c6ca993ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250px" height="230px" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                <h5 class="card-title">Valentino</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Producto 4')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 5 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1605619082574-e92eee603b95?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="250px" height="230px" class="card-img-top" alt="Producto 5">
+              <div class="card-body">
+                <h5 class="card-title">Loewe</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Producto 5')">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrito -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-dark text-white">Carrito</div>
+          <ul class="list-group list-group-flush" id="lista-carrito">
+            <li class="list-group-item text-muted text-center">No hay productos</li>
+          </ul>
+          <div class="card-footer text-center">
+            <button class="btn btn-danger" onclick="eliminarProducto()">Eliminar último producto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer id="contacto" class="footer">
+       <div class="footer-content">
+        <!--
+          <footer>: Pie de página con información de contacto, copyright, etc.
+          - Puede usarse también al final de <article> o <section>.
+        -->
+        <address>
+            <!--
+              <address>: Información de contacto (física, email, teléfono).
+              - Los navegadores/SEO lo asocian a datos de ubicación.
+            -->
+
+<a href="https://share.google/NZb7fc7NuHOJvMfhq" 
+target="_blank" rel="noreference noopener">  COLSA, Av. 16 de Septiembre 784, Alce Blanco, 53370 Naucalpan de Juárez, Méx. </a>
+
+            <br>
+            Teléfono: <a href="tel:+525513006829">+525 513006829</a>
+            <!-- 
+              href="tel:+123456789": Enlace para llamar desde móviles.
+            -->
+        </address>
+        <!-- Copyright -->
+        <p class="copyright">&copy; 2025 Val perfumes</p>
+        
+        <!-- Redes sociales -->
+        <div class="social">
+            <a href="#" aria-label="Facebook">
+                <i class="https://www.facebook.com/share/1RrY83sPwN/?mibextid=wwXIfr"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="https://www.instagram.com/valeriaaa._lopez?igsh=MWFldGxhOThvNGJ0aw%3D%3D&utm_source=qr"></i>
+            </a>
+          
+            
+            
+        </div>
+
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
